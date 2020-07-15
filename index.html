@@ -7,27 +7,10 @@
     <link rel="stylesheet" href="./libs/v6.3.1-dist/ol.css"> <!--theirs -->
 </head>
 <body>
-   <div class="grid-container"> <!--input elements-->
-       <div class="grid-1">
-           <div class="sidebar">
-               <h2>Base Layers</h2>
-               <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Standard' checked>OSM Standard<br>
-               <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Humanitarian' >OSM Humanitarian<br>
-               <input type="radio" name = 'baseLayerRadioButton' value = 'Stamen Terrain' >Stamen Terrain<br>
-            </div>
-       </div>
-
-       <div class="grid-2"> <!--map elements-->
-            <div id='js-map' class='map'></div>
-       </div>
-    </div>
-    
-    <div class="overlay-container">
-        <span class='overlay-text' id='feature-name'></span><br>
-        <span class='overlay-text' id='feature-additionalinfo'></span><br>
-    </div>
-    
+   <div id='js-map' class='map'></div>   
    <script src='./main.js'></script> <!--mine -->
    <script src='./libs/v6.3.1-dist/ol.js'></script> <!--theirs -->
 </body>
 </html>
+
+
