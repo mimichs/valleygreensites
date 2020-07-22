@@ -19,6 +19,12 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+h1{
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-bottom: 0;
+    background: #7cc06d
+}
 .overlay{
     color:white;
     text-decoration: none;
