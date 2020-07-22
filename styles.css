@@ -16,3 +16,19 @@ body {
 .sidebar{
     margin-left: 15px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.overlay{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.overlay-container{
+    background: #7cc06d;
+    font-family: 'Montserrat';
+    padding: 0.3em;
+    border-color: black;
+}

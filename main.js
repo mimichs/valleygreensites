@@ -27,8 +27,8 @@ function init(){
  })
 
  const pinStyle = new ol.style.Icon({
-    scale: 0.7,
-    src: '//raw.githubusercontent.com/jonataswalker/map-utils/master/images/marker_3cc483.png'
+    scale: 0.6,
+    src: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png'
  })
 
  const SitesGeoJSON = new ol.layer.VectorImage({
