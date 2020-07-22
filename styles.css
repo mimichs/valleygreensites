@@ -20,8 +20,8 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 h1{
-    padding-top: 1em;
-    padding-left: 1em;
+    padding-top: 15px;
+    padding-left: 15px;
     margin-bottom: 0;
     background: #7cc06d
 }
