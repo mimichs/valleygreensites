@@ -12,7 +12,11 @@
         "geometry":{"type":"Point","coordinates":[-118.59760522842407,34.20852818975066]}
     },
     {"type":"Feature","properties":{
-        "Name":"Paradise Bike Ride","Category":"bike destination"},
+        "Name":"Palisades Bike Ride","Category":"bike destination"},
         "geometry":{"type":"Point","coordinates":[-118.53707313537596,34.286970795241245]}
+    },
+    {"type":"Feature","properties":{
+        "Name":"Bothwell Ranch","Category":"The last orange grove in LA"},
+        "geometry":{"type":"Point","coordinates":[-118.56391668319704,34.16659419034012]}
     }
 ]}
