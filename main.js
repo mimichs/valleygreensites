@@ -43,7 +43,7 @@ function init(){
         image: pinStyle
     })
  })
-    map.addLayer(SitesGeoJSON)
+map.addLayer(SitesGeoJSON)
    
  map.on('click', function(e){    /* calls js coordinates in console when clicked */
     console.log(e.coordinate)
