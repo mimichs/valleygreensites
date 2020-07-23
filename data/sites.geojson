@@ -8,7 +8,7 @@
         "geometry":{"type":"Point","coordinates":[-118.52685928344727,34.27916971911456]}
     },
     {"type":"Feature","properties":{
-        "Name":"Follow Your Heart","Description":"restaurant","Website":""},
+        "Name":"Follow Your Heart","Description":"restaurant","Website":"https://followyourheart.com/"},
         "geometry":{"type":"Point","coordinates":[-118.59760522842407,34.20852818975066]}
     },
     {"type":"Feature","properties":{
