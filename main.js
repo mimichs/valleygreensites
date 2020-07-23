@@ -2,22 +2,71 @@ window.onload = init;  /*only calls the function when the window is loaded */
 
 function init(){ 
  
-    // create variable for map //
+// create variable for map //
     
  const map = new ol.Map({                   
     view: new ol.View({
-        center: [26884770.51850656, 4052602.3660282493],    
+        center: [26881609.857750453, 4056940.108146491],    
         zoom: 11.5
     }),
-    layers: [
-        new ol.layer.Tile({
-            source: new ol.source.OSM({
-                url: 'https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
-               })
-        })
-    ],
     target: 'js-map'
  })
+
+//basemaps layers
+
+const openStreetMapStandard = new ol.layer.Tile({
+    source: new ol.source.OSM(),
+    visible: false,
+    title: 'OSM Standard'
+   })
+
+ const openStreetMapHumanitarian = new ol.layer.Tile({
+    source: new ol.source.OSM({
+        url: 'https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
+       }),
+    visible: false,
+    title: 'OSM Humanitarian'
+   })
+
+ const stamenTerrain = new ol.layer.Tile({
+   source: new ol.source.XYZ({
+       url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg',
+       attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>',
+   }),
+   visible: true,
+   title: 'Stamen Terrain'
+  })
+
+  const owmtrue = new ol.layer.Tile({
+    source: new ol.source.XYZ({
+        url: 'http://{s}.sat.owm.io/sql/{z}/{x}/{y}?from=s2&APPID={3fb7417e92fc63544bd206a959d2fd25}',
+        attributions: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>',
+    }),
+    visible: true,
+    title: 'OWM True'
+   })
+
+ //layer group 
+ const baseLayerGroup = new ol.layer.Group({
+    layers: [
+        stamenTerrain, openStreetMapStandard, openStreetMapHumanitarian, owmtrue
+    ]
+  })
+
+  map.addLayer(baseLayerGroup);
+
+  //Layer switcher logic for basemaps
+  const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio]');
+  for(let baseLayerElement of baseLayerElements){
+      baseLayerElement.addEventListener('change', function(){
+          let baseLayerElementValue= this.value; //'this' comes from function
+          baseLayerGroup.getLayers().forEach(function(element,index,array){
+              let baseLayerTitle= element.get('title');
+              element.setVisible(baseLayerTitle === baseLayerElementValue);
+         }) //returns collection
+      })
+  }
+
 
  // drop pins
 
@@ -47,7 +96,7 @@ map.addLayer(SitesGeoJSON)
    
  map.on('click', function(e){    /* calls js coordinates in console when clicked */
     console.log(e.coordinate)
-    console.log(ol.proj.transform(e.coordinate, 'EPSG:3857', 'EPSG:4326'));
+    
  })
 
  // Vector Feature Popup Logic
@@ -72,6 +121,5 @@ map.addLayer(SitesGeoJSON)
        overlayFeatureCategory.innerHTML = clickedFeatureCategory;
    })
  })
-
 }
 
