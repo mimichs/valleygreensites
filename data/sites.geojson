@@ -1,22 +1,22 @@
 {"type":"FeatureCollection","features":[
     {"type":"Feature","properties":{
-        "Name":"Sepulveda Wildlife Reserve","Category":"parks","Website":""},
+        "Name":"Sepulveda Wildlife Reserve","Description":"parks","Website":""},
         "geometry":{"type":"Point","coordinates":[-118.47484588623048,34.17204456998344]}
     },
     {"type":"Feature","properties":{
-        "Name":"Aliso Canyon","Category":"parks","Website":""},
+        "Name":"Aliso Canyon","Description":"parks","Website":""},
         "geometry":{"type":"Point","coordinates":[-118.52685928344727,34.27916971911456]}
     },
     {"type":"Feature","properties":{
-        "Name":"Follow Your Heart","Category":"restaurant","Website":""},
+        "Name":"Follow Your Heart","Description":"restaurant","Website":""},
         "geometry":{"type":"Point","coordinates":[-118.59760522842407,34.20852818975066]}
     },
     {"type":"Feature","properties":{
-        "Name":"Palisades Bike Ride","Category":"bike destination","Website":""},
+        "Name":"Palisades Bike Ride","Description":"bike destination","Website":""},
         "geometry":{"type":"Point","coordinates":[-118.53707313537596,34.286970795241245]}
     },
     {"type":"Feature","properties":{
-        "Name":"Bothwell Ranch","Category":"The last orange grove in LA","Website":"https://www.bothwellranch.org"},
+        "Name":"Bothwell Ranch","Description":"The last orange grove in LA","Website":"https://www.bothwellranch.org"},
         "geometry":{"type":"Point","coordinates":[-118.56391668319704,34.16659419034012]}
     }
 ]}

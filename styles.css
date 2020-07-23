@@ -22,6 +22,7 @@ body {
 .image {
     background: url("https://images.squarespace-cdn.com/content/5a2f793651a5846d26bb1a58/1537819959965-WHEAS7KMDSJ6R9WKH91E/Valley+Green+logo.png?format=300w&content-type=image%2Fpng") no-repeat;
     float: left;
+    
     height: 65px;
     width: 300px;
 }

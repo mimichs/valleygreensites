@@ -108,7 +108,7 @@ map.addLayer(SitesGeoJSON)
 
  map.addOverlay(overlayLayer);
  const overlayFeatureName = document.getElementById('Name');
- const overlayFeatureCategory = document.getElementById('Category');
+ const overlayFeatureDescription = document.getElementById('Description');
  const overlayFeatureWebsite = document.getElementById('Website')
 
  map.on('click', function(e){
@@ -116,11 +116,11 @@ map.addLayer(SitesGeoJSON)
    map.forEachFeatureAtPixel(e.pixel, function(feature,layer){
        let clickedCoordinate = e.coordinate;
        let clickedFeatureName = feature.get('Name');
-       let clickedFeatureCategory = feature.get('Category');
+       let clickedFeatureDescription = feature.get('Description');
        let clickedFeatureWebsite = feature.get('Website');
        overlayLayer.setPosition(clickedCoordinate);
        overlayFeatureName.innerHTML = clickedFeatureName;
-       overlayFeatureCategory.innerHTML = clickedFeatureCategory;
+       overlayFeatureDescription.innerHTML = clickedFeatureDescription;
        overlayFeatureWebsite.innerHTML = clickedFeatureWebsite;
    })
  })
