@@ -8,19 +8,24 @@
 </head>
 <body>
     <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-        <button onclick="w3_close()" class="closebutton">&times;</button>
-        <div class = "image"></div>
-        <div class="grid-1">
-            <div class="sidebar">
-                <h2>Base Layers</h2>
-                <input type="radio" name = 'baseLayerRadioButton' value = 'Stamen Terrain'checked > Terrain<br>
-                <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Standard' > Standard<br>
-                <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Humanitarian' > Humanitarian<br>
-                <input type="radio" name = 'baseLayerRadioButton' value = 'OWM True' > Satellite [not yet available]<br>
-            </div>
+        <div class= "barblock-top">
+            <button onclick="w3_close()" class="closebutton">&times;</button>
+            <div class = "image"></div>
         </div>
-        <a href="#" class="search">Search</a>
-        <a href="#" class="form">Add a place</a>
+        <div class = "barblock-bottom">
+            <p class="welcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eveniet. </p>
+            <div class="grid-1">
+                <div class="sidebar">
+                    <h2>Base Layer</h2>
+                    <input type="radio" name = 'baseLayerRadioButton' value = 'Stamen Terrain'checked > Terrain<br>
+                    <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Standard' > Standard<br>
+                    <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Humanitarian' > Humanitarian<br>
+                    <input type="radio" name = 'baseLayerRadioButton' value = 'OWM True' > Satellite [not yet available]<br>
+                </div>
+            </div>
+            <a href="#" class="search">Search</a>
+            <a href="#" class="form">Add a place</a>
+            </div>
     </div>
     <div class = "header">
         <button class="button" onclick="w3_open()">☰</button>

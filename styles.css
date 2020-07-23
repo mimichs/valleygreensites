@@ -30,7 +30,7 @@ body {
     font-family: sans-serif;
     font-size: small;
     font-weight: lighter;
-    letter-spacing: .05em;
+    letter-spacing: .1em;
     color: gray;
     padding-top: .3em
 }
@@ -55,7 +55,7 @@ body {
 .button{
     float: left;
     background-color: inherit;
-    color: white;
+    color: gray;
     border: none
 }
 
@@ -70,11 +70,6 @@ body {
 .w3-bar-block {
     width:28%;
     text-align:left;
-    padding:8px 16px
-}
-
-.w3-border-right{
-    border-right:1px solid #ccc!important
 }
 
 .closebutton{
@@ -82,12 +77,35 @@ body {
     background-color: inherit;
     color: white;
     border: none;
-    margin: none;
+    position:fixed!important;
 }
+
+.barblock-bottom{
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+.welcome{
+    margin-top: 2em;
+    margin-left: -1.5em;
+    text-align: center;
+    color: #f7be86;
+    font-family: sans-serif;
+    font-size: small;
+    letter-spacing: .1em;
+}
+
+h2{
+    margin-left: -1em;
+    margin-top: 2.5em;
+    font-size: small;
+}
+
 
 .grid-1{
     color: white;
     font-family: sans-serif;
+    font-weight: lighter;
     font-size:  .7rem;
 }
 
