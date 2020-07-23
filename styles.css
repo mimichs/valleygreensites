@@ -54,6 +54,7 @@ body {
 
 .button{
     float: left;
+    size: 500%;
     background-color: inherit;
     color: gray;
     border: none;
@@ -62,6 +63,7 @@ body {
 .w3-sidebar{
     height:100%;
     background-color:#001f08;
+    opacity: 50%;
     position:fixed!important;
     z-index:1;
     overflow:auto
@@ -74,9 +76,11 @@ body {
 
 .closebutton{
     background-color: inherit;
+    float:right;
+    margin-left: 20px;
+    margin-top: 2px;
     color: white;
     border: none;
-    position:fixed!important;
 }
 
 .barblock-bottom{
@@ -86,8 +90,8 @@ body {
 
 .welcome{
     margin-top: 20px;
-    margin-left: -1.5em;
-    text-align: center;
+    margin-left: 1em;
+    text-align: left;
     color: #f7be86;
     font-family: sans-serif;
     font-size: small;
@@ -97,9 +101,11 @@ body {
 h2{
     margin-left: -1em;
     margin-top: 2.5em;
+    margin-bottom: 0;
     font-size: 15px;
+    color: white;
+    font-family: sans-serif;
 }
-
 
 .grid-1{
     color: white;
@@ -107,4 +113,14 @@ h2{
     font-weight: lighter;
     font-size:  12px;
 }
+
+h3{
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size:  12px;
+    margin-top: -1.4em;
+    margin-left: -1.1em;
+}
+
 

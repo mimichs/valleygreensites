@@ -9,23 +9,27 @@
 <body>
     <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
         <div class= "barblock-top">
-            <button onclick="w3_close()" class="closebutton">&times;</button>
-            <div class = "image"></div>
+            <button onclick="w3_close()" class="closebutton">close</button>
         </div>
         <div class = "barblock-bottom">
-            <p class="welcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eveniet. </p>
+            <p class="welcome">This is an collaborative site for discovering and sharing beautiful green spaces in the SFV.  </p>
             <div class="grid-1">
                 <div class="sidebar">
                     <h2>Base Layer</h2>
                     <input type="radio" name = 'baseLayerRadioButton' value = 'Stamen Terrain'checked > Terrain<br>
                     <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Standard' > Standard<br>
                     <input type="radio" name = 'baseLayerRadioButton' value = 'OSM Humanitarian' > Humanitarian<br>
-                    <input type="radio" name = 'baseLayerRadioButton' value = 'OWM True' > Satellite [not yet available]<br>
+                    <input type="radio" name = 'baseLayerRadioButton' value = 'OWM True' > Satellite [available soon]<br>
                 </div>
             </div>
-            <a href="#" class="search">Search</a>
-            <a href="#" class="form">Add a place</a>
+            <div class = "searchbar">
+                <h2>Search an address: </h2>
             </div>
+            <div class = "Form">
+                <h2>To add a pin...</h2><br>
+                <h3>click a spot on the map and fill in the info below</h3>
+            </div>
+        </div>
     </div>
     <div class = "header">
         <button class="button" onclick="w3_open()">☰</button>
@@ -33,7 +37,7 @@
         <div class = "text1">The San Fernando Valley Environmental Action Hub</div>
         <div class = "text2">GREENING THE MAP</div>
     </div>
-    <div id='js-map' class='map'></div>
+    <div id='js-map' class='map' scale = 100%></div>
     <div class="overlay-container">
         <span class='overlay-text' id='Name'></span><br>
         <span class='overlay-text' id='Category'></span><br>
